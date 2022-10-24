@@ -1,0 +1,77 @@
+.width-30 {
+  width: 30%;
+};
+
+.width-40 {
+  width: 40%;
+};
+
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+
+  .margin-#{$space}-all {
+    margin: #{$space}px;
+  }
+  .padding-#{$space}-all {
+    padding: #{$space}px;
+  }
+
+  .margin-#{$space}-vertical {
+    margin-top: #{$space}px;
+    margin-bottom: #{$space}px;
+  }
+  .padding-#{$space}-vertical {
+    padding-top: #{$space}px;
+    padding-bottom: #{$space}px;
+  }
+
+  .margin-#{$space}-horizontal {
+    margin-left: #{$space}px;
+    margin-right: #{$space}px;
+  }
+  .padding-#{$space}-horizontal {
+    padding-left: #{$space}px;
+    padding-right: #{$space}px;
+  }
+
+  @each $side in $sides {
+    .margin-#{$space}-#{$side} {
+      margin-#{$side}: #{$space}px;
+    }
+
+    .padding-#{$space}-#{$side} {
+      padding-#{$side}: #{$space}px;
+    }
+
+    @each $secondside in $sides {
+      .margin-#{$space}-#{$side}-#{$secondside} {
+        margin-#{$side}: #{$space}px;
+        margin-#{$secondside}: #{$space}px;
+      }
+
+      .padding-#{$space}-#{$side}-#{$secondside} {
+        padding-#{$side}: #{$space}px;
+        padding-#{$secondside}: #{$space}px;
+      }
+    }
+  }
+}
+
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.no-border {
+  border: none;
+}

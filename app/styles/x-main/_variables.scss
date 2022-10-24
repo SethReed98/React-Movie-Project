@@ -1,0 +1,85 @@
+
+// another notation for sass variables that can be used for both styled-components and stylesheets.
+/* Usage:
+.button {
+    background-color: var(--primary-color);
+}
+
+OR
+
+const Button = styled.button`
+    background-color: var(--primary-color);
+`;
+*/
+
+:root {
+  --primary-color: #fec85b;
+  --theme: 'default';
+
+  //Screen Size
+  --screen-xs-min: 600px;
+  --screen-sm-min: 600px;
+  --screen-md-min: 960px;
+  --screen-lg-min: 1280px;
+
+  // --application-width-xs: 100%;
+--application-width-xs: 600px;
+--application-width-sm: 600px;
+--application-width-md: 910px;
+--application-width-lg: 1150px;
+
+--content-width-xs: 352px;
+--content-width-sm: 536px;
+--content-width-md: 750px;
+--content-width-lg: 100%;
+
+--header-height: 100px;
+
+--base-font-size: 16px;
+--font-size-small: 0.9rem; // ~14px
+--font-size: 1rem; // ~16px
+--font-size-medium: 1.2rem; // ~20px
+--font-size-large: 1.6rem; // ~26px
+--font-size-xl: 2rem; // ~32px
+
+//Fonts
+--main-font: 'Open Sans',
+sans-serif;
+--fancy-font: 'Caveat',
+cursive;
+
+--font-weight-normal: 500;
+--font-weight-semibold: 600;
+--font-weight-bold: 700;
+
+//Colors
+--main-red: #F66531;
+--main-red-dark: #CB4C2D;
+
+--main-blue: #85A2D6;
+--main-blue-dark: #587FC3;
+
+--main-green: #90CA57;
+--main-green-dark: #78AA48;
+
+--main-orange: #F68431;
+--main-orange-dark: #CF6920;
+
+--main-yellow: #FAC43D;
+--main-yellow-dark: #D09F25;
+
+--main-pink: #FDA2C6;
+--main-pink-dark: #D0789B;
+
+--black: #240305;
+--grey-800: #350206;
+--grey-600: #571116; //mahogany/neutral
+--grey-400: #E1DED5;
+--grey-300: #EEE6D2;
+--grey-200: #F6F2E8;
+--grey-100: #FBF9F5;
+--white: #FFF;
+
+// Other standards
+--border-radius: 10px;
+}

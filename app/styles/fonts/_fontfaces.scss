@@ -1,0 +1,28 @@
+/* la-belle-aurore-regular - latin */
+@font-face {
+  font-family: 'La Belle Aurore';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/la-belle-aurore-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('La Belle Aurore'), local('LaBelleAurore'),
+       url('/styles/fonts/la-belle-aurore-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/styles/fonts/la-belle-aurore-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/styles/fonts/la-belle-aurore-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/styles/fonts/la-belle-aurore-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/styles/fonts/la-belle-aurore-v10-latin-regular.svg#LaBelleAurore') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/caveat.eot'); /* IE9 Compat Modes */
+  src: local('Caveat'),
+       url('/styles/fonts/caveat.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/styles/fonts/caveat.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/styles/fonts/caveat.woff') format('woff'), /* Modern Browsers */
+       url('/styles/fonts/caveat.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/styles/fonts/caveat.svg#Caveat') format('svg'); /* Legacy iOS */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=latin-ext');

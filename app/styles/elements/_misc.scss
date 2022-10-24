@@ -1,0 +1,21 @@
+.logo {
+  display: inline-block;
+  height: 70px;
+  max-width: 250px;
+}
+
+.avatar {
+  &.big {
+    width: 10em;
+    height: 10em;
+  }
+
+  &.medium {
+    width: 3em;
+    height: 3em;
+  }
+
+  &.compact {
+    margin-left: -10px;
+  }
+}

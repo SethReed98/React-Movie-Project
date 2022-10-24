@@ -1,0 +1,69 @@
+// These should be here and in that order
+@import"x-main/_vendors.scss";
+@import "x-main/variables.scss";
+@import "fonts/_fontfaces.scss";
+// end
+
+
+@import"_footer.scss";
+@import"_navigation.scss";
+@import"_wrappers.scss";
+@import"elements/_a.scss";
+@import"elements/_buttons.scss";
+@import"elements/_form.scss";
+@import"elements/_img.scss";
+@import"elements/_misc.scss";
+@import"helpers/_helpers.scss";
+@import"helpers/_textstyles.scss";
+@import"elements/_checkbox.scss";
+
+.app-wrapper {
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--main-font);
+  font-size: var(--base-font-size);
+
+  background-color: var(--grey-200);
+}
+
+h1,
+p {
+  font-family: Lato;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+
+thead tr th {
+  font-weight: 500;
+  text-align: left;
+  background-color: #fafafa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e1e1e1;
+}
+
+th,
+td {
+  padding: 8px;
+  overflow-wrap: break-word;
+}
+
+.pagination-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

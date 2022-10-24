@@ -1,0 +1,13 @@
+footer {
+  height: 80px;
+  
+  a, span {
+    padding: 1em;
+    color: inherit;
+    font-size: var(--font-size-small);
+  }
+
+  a {
+    font-weight: 600;
+  }
+}

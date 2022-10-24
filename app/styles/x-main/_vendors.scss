@@ -1,0 +1,62 @@
+.ant-carousel {
+  .tutorial-carousel .slick-dots {
+    top: 240px; // Header is 210px
+    height: 1em;
+
+    li {
+      width: 8px;
+      height: 8px;
+      border: 2px solid var(--black);
+      border-radius: 50%;
+
+      &.slick-active {
+        width: 8px;
+        background-color: var(--black);
+      }
+
+      button {
+        display: none;
+      }
+    }
+  }
+}
+
+.no-buttons {
+  .ant-modal-footer {
+    display: none;
+  }
+}
+
+.ant-menu.ant-menu-horizontal {
+  padding-left: 1em;
+  border-bottom: 2px solid var(--grey-400);
+}
+
+  .ant-menu.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+  .ant-menu.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+  .ant-menu.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--black);
+    border-bottom-color: var(--black);
+    margin: 0;
+    width: 200px;
+    text-align: center;
+    margin-bottom: -1px;
+
+  }
+
+  .ant-menu.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--black);
+    margin: 0;
+    width: 200px;
+    text-align: center;
+    margin-bottom: -1px;
+  }
