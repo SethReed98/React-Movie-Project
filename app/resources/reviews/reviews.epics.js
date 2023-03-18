@@ -5,6 +5,9 @@ import {
   REVIEWS_FETCH_REQUEST,
   REVIEWS_FETCH_SUCCESS,
   REVIEWS_FETCH_FAILURE,
+  CRITICS_FETCH_REQUEST,
+  CRITICS_FETCH_SUCCESS,
+  CRITICS_FETCH_FAILURE,
 } from './reviews.actions'
 
 
@@ -29,4 +32,25 @@ const fetchReviews = (action$, state$, { get }) =>
     )
   )
 
-export default combineEpics(fetchReviews)
+  const fetchCritics = (action$, state$, { get }) =>
+  action$.pipe(
+    ofType(CRITICS_FETCH_REQUEST),
+    mergeMap(() =>
+      from(get('/static/critics.json')).pipe(
+        map(response => {
+          let payload = response.data
+          return {
+            type: CRITICS_FETCH_SUCCESS,
+            payload,
+            meta: response.data.meta,
+          }
+        }),
+        catchError(error => {
+          console.error(error)
+          return of({ type: CRITICS_FETCH_FAILURE, error: errorMsg })
+        })
+      )
+    )
+  )
+
+export default combineEpics(fetchReviews, fetchCritics)
